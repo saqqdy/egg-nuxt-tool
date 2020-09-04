@@ -1,0 +1,44 @@
+{
+	"name": "fille",
+	"description": "vue开发者平台",
+	"version": "1.0.0",
+	"scripts": {
+		"eslint": "eslint --fix --ext .vue,.js",
+		"prettier": "npx prettier --write bin",
+		"lib": "sh bin/lib.sh",
+		"docs": "sh bin/docs.sh --docs",
+		"push": "sh bin/publish.sh",
+		"pub": "sh bin/publish.sh --deploy"
+	},
+	"main": "index.js",
+	"bin": {
+		"fille": "bin/fille.js"
+	},
+	"dependencies": {
+		"regenerator-runtime": "0.13.7"
+	},
+	"devDependencies": {
+		"@babel/cli": "7.10.5",
+		"@babel/core": "7.11.1",
+		"@babel/preset-env": "7.11.0",
+		"eslint": "7.6.0",
+		"jsdoc-to-markdown": "^6.0.1",
+		"prettier": "^2.0.5",
+		"uglify-js": "^3.10.1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/saqqdy/fille.git"
+	},
+	"keywords": [
+		"fille",
+		"vue",
+		"vue3.0"
+	],
+	"author": "saqqdy.com",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/saqqdy/fille/issues"
+	},
+	"homepage": "https://github.com/saqqdy/fille#readme"
+}
