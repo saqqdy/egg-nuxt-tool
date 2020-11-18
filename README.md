@@ -23,7 +23,7 @@ $ npm i egg-nuxt-tool --save
 
 ```js
 // {app_root}/config/plugin.js
-exports.nuxtRender = {
+exports.nuxtTool = {
   enable: true,
   package: 'egg-nuxt-tool',
 };
@@ -33,7 +33,7 @@ exports.nuxtRender = {
 
 ```js
 // {app_root}/config/config.default.js
-exports.nuxtRender = {
+exports.nuxtTool = {
 };
 ```
 
