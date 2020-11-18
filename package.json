@@ -1,44 +1,67 @@
 {
-	"name": "fille",
-	"description": "vue开发者平台",
-	"version": "1.0.0",
-	"scripts": {
-		"eslint": "eslint --fix --ext .vue,.js",
-		"prettier": "npx prettier --write bin",
-		"lib": "sh bin/lib.sh",
-		"docs": "sh bin/docs.sh --docs",
-		"push": "sh bin/publish.sh",
-		"pub": "sh bin/publish.sh --deploy"
+	"name": "egg-nuxt-tool",
+	"description": "egg plugin for nuxt render",
+	"version": "1.0.1",
+	"eggPlugin": {
+		"name": "nuxtTool"
 	},
-	"main": "index.js",
-	"bin": {
-		"fille": "bin/fille.js"
+	"scripts": {
+		"test-local": "egg-bin test",
+		"cov": "egg-bin cov",
+		"lint": "eslint .",
+		"ci": "egg-bin pkgfiles --check && npm run lint && npm run cov",
+		"pkgfiles": "egg-bin pkgfiles",
+		"autod": "autod",
+		"test": "npm run lint -- --fix && egg-bin pkgfiles && npm run test-local",
+		"eslint": "eslint --fix --ext .vue,.js",
+		"prettier": "npx prettier --write bin"
 	},
 	"dependencies": {
-		"regenerator-runtime": "0.13.7"
+		"nuxt": "^2.14.7"
 	},
 	"devDependencies": {
-		"@babel/cli": "7.10.5",
-		"@babel/core": "7.11.1",
-		"@babel/preset-env": "7.11.0",
-		"eslint": "7.6.0",
+		"autod": "^3.0.1",
+		"autod-egg": "^1.1.0",
+		"babel-eslint": "^10.1.0",
+		"egg": "^2.16.0",
+		"egg-bin": "^4.11.0",
+		"egg-ci": "^1.11.0",
+		"egg-mock": "^4.0.1",
+		"eslint": "^7.13.0",
+		"eslint-plugin-jsdoc": "^30.7.8",
 		"jsdoc-to-markdown": "^6.0.1",
-		"prettier": "^2.0.5",
+		"prettier": "^2.1.2",
 		"uglify-js": "^3.10.1"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/saqqdy/fille.git"
+		"url": "git+https://github.com/saqqdy/egg-nuxt-tool.git"
+	},
+	"engines": {
+		"node": ">=10.0.0"
+	},
+	"files": [
+		"app.js",
+		"agent.js",
+		"config",
+		"app"
+	],
+	"ci": {
+		"version": "8, 10"
 	},
 	"keywords": [
-		"fille",
-		"vue",
-		"vue3.0"
+		"egg-nuxt-tool",
+		"nuxt",
+		"render",
+		"egg",
+		"plugin",
+		"eggPlugin",
+		"egg-plugin"
 	],
 	"author": "saqqdy.com",
 	"license": "ISC",
 	"bugs": {
-		"url": "https://github.com/saqqdy/fille/issues"
+		"url": "https://github.com/saqqdy/egg-nuxt-tool/issues"
 	},
-	"homepage": "https://github.com/saqqdy/fille#readme"
+	"homepage": "https://github.com/saqqdy/egg-nuxt-tool#readme"
 }
