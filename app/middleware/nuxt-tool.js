@@ -11,8 +11,6 @@ module.exports = (options, app) => {
 	return async function (ctx, next) {
 		let flag = false,
 			routerArr = []
-		// console.log(7777, flag, ctx.path, ctx.path.indexOf('/java/') > -1)
-		// if (ctx.path === '/java/region/getRegion') ctx.path = '/region/getRegion'
 		if (!flag) {
 			routerArr = app.router.stack.map(el => el.path)
 			flag = true
@@ -22,12 +20,14 @@ module.exports = (options, app) => {
 		}
 		for (const route of routerArr) {
 			if (typeof route === 'string' && route === ctx.path) return await next()
-			const reg = new RegExp(route)
-			if (reg.test(ctx.path)) return await next()
+			try {
+				const reg = new RegExp(route)
+				if (reg.test(ctx.path)) return await next()
+			} catch (e) {
+				throw e
+			}
 		}
-		// if (routerArr.some(el => el === ctx.path)) {
-		// 	return await next()
-		// }
+		if (ctx.path === '/graphql') return await next()
 		ctx.status = 200
 		ctx.req.session = ctx.session
 		const { res, req } = ctx
