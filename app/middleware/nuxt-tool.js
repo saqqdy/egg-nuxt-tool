@@ -2,7 +2,7 @@ const { Nuxt, Builder } = require('nuxt')
 
 module.exports = (options, app) => {
 	// console.log('egg-nuxt-tool', options, app)
-	const { httpProxy = {} } = app.config
+	const { httpProxy = {}, static = {} } = app.config
 	const nuxtRender = new Nuxt(options)
 	const isDev = process.env.NODE_ENV !== 'production'
 	// if (isDev) {
@@ -18,6 +18,12 @@ module.exports = (options, app) => {
 		for (const key in httpProxy) {
 			if (ctx.originalUrl.indexOf(key) === 0) return await next()
 		}
+		if (static.prefix && ctx.path.indexOf('/public') === 0) return await next()
+		if (static.dir) {
+			for (let dir of static.dir) {
+				if (dir.prefix && dir.prefix !== '/' && ctx.path.indexOf(dir.prefix) === 0) return await next()
+			}
+		}
 		for (const route of routerArr) {
 			if (typeof route === 'string' && route === ctx.path) return await next()
 			try {
@@ -28,6 +34,7 @@ module.exports = (options, app) => {
 			}
 		}
 		if (ctx.path === '/graphql') return await next()
+		if (ctx.path.indexOf('/public') === 0) return await next()
 		ctx.status = 200
 		ctx.req.session = ctx.session
 		const { res, req } = ctx
