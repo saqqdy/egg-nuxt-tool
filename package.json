@@ -1,7 +1,7 @@
 {
 	"name": "egg-nuxt-tool",
 	"description": "egg plugin for nuxt render",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"eggPlugin": {
 		"name": "nuxtTool"
 	},
@@ -17,7 +17,7 @@
 		"prettier": "npx prettier --write bin"
 	},
 	"dependencies": {
-		"nuxt": "^2.14.7"
+		"nuxt": "^2.14.12"
 	},
 	"devDependencies": {
 		"autod": "^3.0.1",
@@ -27,11 +27,11 @@
 		"egg-bin": "^4.11.0",
 		"egg-ci": "^1.11.0",
 		"egg-mock": "^4.0.1",
-		"eslint": "^7.13.0",
+		"eslint": "^7.15.0",
 		"eslint-plugin-jsdoc": "^30.7.8",
 		"jsdoc-to-markdown": "^6.0.1",
-		"prettier": "^2.1.2",
-		"uglify-js": "^3.10.1"
+		"prettier": "^2.2.1",
+		"uglify-js": "^3.12.2"
 	},
 	"repository": {
 		"type": "git",
