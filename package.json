@@ -1,7 +1,7 @@
 {
 	"name": "egg-nuxt-tool",
 	"description": "egg plugin for nuxt render",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"eggPlugin": {
 		"name": "nuxtTool"
 	},
@@ -17,6 +17,7 @@
 		"prettier": "npx prettier --write bin"
 	},
 	"dependencies": {
+		"js-cool": "^1.0.4",
 		"nuxt": "^2.14.12"
 	},
 	"devDependencies": {
