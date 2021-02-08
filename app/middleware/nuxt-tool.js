@@ -2,7 +2,7 @@ const { Nuxt, Builder } = require('nuxt')
 
 module.exports = (options, app) => {
 	// console.log('egg-nuxt-tool', options, app)
-	const { httpProxy = {}, static = {} } = app.config
+	const { httpProxy = {}, httpProxyPlus = {}, static = {} } = app.config
 	const nuxtRender = new Nuxt(options)
 	const isDev = process.env.NODE_ENV !== 'production'
 	// if (isDev) {
@@ -16,6 +16,9 @@ module.exports = (options, app) => {
 			flag = true
 		}
 		for (const key in httpProxy) {
+			if (ctx.originalUrl.indexOf(key) === 0) return await next()
+		}
+		for (const key in httpProxyPlus) {
 			if (ctx.originalUrl.indexOf(key) === 0) return await next()
 		}
 		if (static.prefix && ctx.path.indexOf('/public') === 0) return await next()
