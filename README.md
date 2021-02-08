@@ -49,9 +49,7 @@ exports.nuxtTool = {
 exports.nuxtTool = {
   whitePath: [/^\/java\//, '/public', '/graphql'], // whiteList
   ...nuxtConfig, // nuxtConfig
-  rootDir: path.join(appInfo.baseDir, 'path/of/nuxtsite/root'),
-  srcDir: path.resolve(appInfo.baseDir, 'path/of/nuxtsite/root'),
-  modulesDir: path.resolve(appInfo.baseDir, 'path/of/nuxtsite/root/node_modules')
+  // ...
 };
 ```
 
