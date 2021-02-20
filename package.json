@@ -14,25 +14,28 @@
 		"autod": "autod",
 		"test": "npm run lint -- --fix && egg-bin pkgfiles && npm run test-local",
 		"eslint": "eslint --fix --ext .vue,.js",
-		"prettier": "npx prettier --write bin"
+		"prettier": "prettier --write ./"
 	},
 	"dependencies": {
-		"js-cool": "^1.0.4",
-		"nuxt": "^2.14.12"
+		"js-cool": "^1.0.6",
+		"nuxt": "^2.15.1"
 	},
 	"devDependencies": {
+		"@babel/eslint-parser": "^7.12.17",
+		"@saqqdy/prettier-config": "^1.0.3",
 		"autod": "^3.0.1",
 		"autod-egg": "^1.1.0",
-		"babel-eslint": "^10.1.0",
-		"egg": "^2.16.0",
+		"egg": "^2.29.3",
 		"egg-bin": "^4.11.0",
 		"egg-ci": "^1.11.0",
 		"egg-mock": "^4.0.1",
-		"eslint": "^7.19.0",
-		"eslint-plugin-jsdoc": "^31.6.1",
+		"eslint": "^7.20.0",
+		"eslint-config-egg": "^9.0.0",
+		"eslint-config-sets": "^1.0.10",
+		"eslint-plugin-jsdoc": "^32.0.2",
 		"jsdoc-to-markdown": "^6.0.1",
 		"prettier": "^2.2.1",
-		"uglify-js": "^3.12.7"
+		"uglify-js": "^3.12.8"
 	},
 	"repository": {
 		"type": "git",

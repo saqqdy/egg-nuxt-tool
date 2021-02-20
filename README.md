@@ -37,9 +37,9 @@ $ yarn add egg-nuxt-tool
 ```js
 // {app_root}/config/plugin.js
 exports.nuxtTool = {
-  enable: true,
-  package: 'egg-nuxt-tool',
-};
+	enable: true,
+	package: 'egg-nuxt-tool'
+}
 ```
 
 ## Configuration
