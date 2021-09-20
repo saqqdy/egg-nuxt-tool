@@ -1,71 +1,71 @@
 {
-	"name": "egg-nuxt-tool",
-	"description": "egg plugin for nuxt render",
-	"version": "1.0.3",
-	"eggPlugin": {
-		"name": "nuxtTool"
-	},
-	"scripts": {
-		"test-local": "egg-bin test",
-		"cov": "egg-bin cov",
-		"lint": "eslint .",
-		"ci": "egg-bin pkgfiles --check && npm run lint && npm run cov",
-		"pkgfiles": "egg-bin pkgfiles",
-		"autod": "autod",
-		"test": "npm run lint -- --fix && egg-bin pkgfiles && npm run test-local",
-		"eslint": "eslint --fix --ext .vue,.js",
-		"prettier": "prettier --write ./"
-	},
-	"dependencies": {
-		"js-cool": "^2.1.2",
-		"nuxt": "^2.15.8"
-	},
-	"devDependencies": {
-		"@saqqdy/prettier-config": "^1.0.4",
-		"autod": "^3.1.1",
-		"autod-egg": "^1.1.0",
-		"babel-eslint": "^10.1.0",
-		"egg": "^2.30.0",
-		"egg-bin": "^4.16.4",
-		"egg-ci": "^1.19.0",
-		"egg-mock": "^3.26.0",
-		"eslint": "^7.32.0",
-		"eslint-config-egg": "^9.0.0",
-		"eslint-config-sets": "^1.5.2",
-		"eslint-plugin-jsdoc": "^36.1.0",
-		"jsdoc-to-markdown": "^6.0.1",
-		"prettier": "^2.4.1",
-		"uglify-js": "^3.14.2"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/saqqdy/egg-nuxt-tool.git"
-	},
-	"engines": {
-		"node": ">=10.0.0"
-	},
-	"files": [
-		"app.js",
-		"agent.js",
-		"config",
-		"app"
-	],
-	"ci": {
-		"version": "8, 10"
-	},
-	"keywords": [
-		"egg-nuxt-tool",
-		"nuxt",
-		"render",
-		"egg",
-		"plugin",
-		"eggPlugin",
-		"egg-plugin"
-	],
-	"author": "saqqdy.com",
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/saqqdy/egg-nuxt-tool/issues"
-	},
-	"homepage": "https://github.com/saqqdy/egg-nuxt-tool#readme"
+    "name": "egg-nuxt-tool",
+    "description": "egg plugin for nuxt render",
+    "version": "1.0.3",
+    "eggPlugin": {
+        "name": "nuxtTool"
+    },
+    "scripts": {
+        "test-local": "egg-bin test",
+        "cov": "egg-bin cov",
+        "lint": "eslint .",
+        "ci": "egg-bin pkgfiles --check && npm run lint && npm run cov",
+        "pkgfiles": "egg-bin pkgfiles",
+        "autod": "autod",
+        "test": "npm run lint -- --fix && egg-bin pkgfiles && npm run test-local",
+        "eslint": "eslint --fix --ext .vue,.js",
+        "prettier": "prettier --write ./"
+    },
+    "dependencies": {
+        "js-cool": "^2.1.2",
+        "nuxt": "^2.15.8"
+    },
+    "devDependencies": {
+        "@saqqdy/prettier-config": "^1.0.4",
+        "autod": "^3.1.1",
+        "autod-egg": "^1.1.0",
+        "babel-eslint": "^10.1.0",
+        "egg": "^2.30.0",
+        "egg-bin": "^4.16.4",
+        "egg-ci": "^1.19.0",
+        "egg-mock": "^3.26.0",
+        "eslint": "^7.32.0",
+        "eslint-config-egg": "^9.0.0",
+        "eslint-config-sets": "^1.5.3",
+        "eslint-plugin-jsdoc": "^36.1.0",
+        "jsdoc-to-markdown": "^6.0.1",
+        "prettier": "^2.4.1",
+        "uglify-js": "^3.14.2"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/saqqdy/egg-nuxt-tool.git"
+    },
+    "engines": {
+        "node": ">=10.0.0"
+    },
+    "files": [
+        "app.js",
+        "agent.js",
+        "config",
+        "app"
+    ],
+    "ci": {
+        "version": "8, 10"
+    },
+    "keywords": [
+        "egg-nuxt-tool",
+        "nuxt",
+        "render",
+        "egg",
+        "plugin",
+        "eggPlugin",
+        "egg-plugin"
+    ],
+    "author": "saqqdy.com",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/saqqdy/egg-nuxt-tool/issues"
+    },
+    "homepage": "https://github.com/saqqdy/egg-nuxt-tool#readme"
 }

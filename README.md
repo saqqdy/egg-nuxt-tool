@@ -47,8 +47,8 @@ $ yarn add egg-nuxt-tool
 ```js
 // {app_root}/config/plugin.js
 exports.nuxtTool = {
-	enable: true,
-	package: 'egg-nuxt-tool'
+    enable: true,
+    package: 'egg-nuxt-tool'
 }
 ```
 
@@ -57,9 +57,9 @@ exports.nuxtTool = {
 ```js
 // {app_root}/config/config.default.js
 exports.nuxtTool = {
-	whitePath: [/^\/java\//, '/public', '/graphql'], // whiteList
-	...nuxtConfig // nuxtConfig
-	// ...
+    whitePath: [/^\/java\//, '/public', '/graphql'], // whiteList
+    ...nuxtConfig // nuxtConfig
+    // ...
 }
 ```
 

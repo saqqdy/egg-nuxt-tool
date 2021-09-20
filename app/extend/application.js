@@ -21,16 +21,16 @@ const NUXTBUILD = Symbol('Application#nuxtBuild')
 // }
 
 module.exports = {
-	get nuxt() {
-		if (!this[NUXT]) {
-			this[NUXT] = new Nuxt(this.config.nuxtTool)
-		}
-		return this[NUXT]
-	},
-	get nuxtBuild() {
-		if (!this[NUXTBUILD]) {
-			this[NUXTBUILD] = new Builder(this.nuxt)
-		}
-		return this[NUXTBUILD]
-	},
+    get nuxt() {
+        if (!this[NUXT]) {
+            this[NUXT] = new Nuxt(this.config.nuxtTool)
+        }
+        return this[NUXT]
+    },
+    get nuxtBuild() {
+        if (!this[NUXTBUILD]) {
+            this[NUXTBUILD] = new Builder(this.nuxt)
+        }
+        return this[NUXTBUILD]
+    },
 }
