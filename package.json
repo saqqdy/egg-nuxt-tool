@@ -63,7 +63,7 @@
 		"egg-plugin"
 	],
 	"author": "saqqdy.com",
-	"license": "ISC",
+	"license": "MIT",
 	"bugs": {
 		"url": "https://github.com/saqqdy/egg-nuxt-tool/issues"
 	},
