@@ -1,5 +1,3 @@
-'use strict'
-
 module.exports = app => {
 	app.config.coreMiddleware.unshift('nuxtTool')
 	app.beforeStart(async () => {

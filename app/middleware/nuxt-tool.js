@@ -1,4 +1,4 @@
-const { Nuxt, Builder } = require('nuxt')
+const { Nuxt } = require('nuxt')
 const getType = require('js-cool/lib/getType')
 
 module.exports = (options, app) => {
@@ -9,13 +9,13 @@ module.exports = (options, app) => {
 	// if (isDev) {
 	// 	new Builder(nuxtRender).build()
 	// }
-	return async function (ctx, next) {
+	return async function(ctx, next) {
+		const whitePathType = getType(whitePath)
 		let flag = false,
-			whitePathType = getType(whitePath),
 			routerArr = []
-		if (whitePathType === 'string') whitePath = [whitePath]
+		if (whitePathType === 'string') whitePath = [ whitePath ]
 		// whiteList go next
-		for (let src of whitePath) {
+		for (const src of whitePath) {
 			const srcType = getType(src)
 			if (srcType === 'string' && ctx.originalUrl.indexOf(src) === 0) return await next()
 			else if (srcType === 'regexp' && src.test(ctx.originalUrl)) return await next()
@@ -29,7 +29,7 @@ module.exports = (options, app) => {
 		if (staticSrc.prefix && ctx.path.indexOf(staticSrc.prefix) === 0) return await next()
 		// muti static path
 		if (staticSrc.dir) {
-			for (let dir of staticSrc.dir) {
+			for (const dir of staticSrc.dir) {
 				if (dir.prefix && dir.prefix !== '/' && ctx.path.indexOf(dir.prefix) === 0) return await next()
 			}
 		}

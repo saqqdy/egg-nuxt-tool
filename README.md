@@ -57,10 +57,10 @@ exports.nuxtTool = {
 ```js
 // {app_root}/config/config.default.js
 exports.nuxtTool = {
-  whitePath: [/^\/java\//, '/public', '/graphql'], // whiteList
-  ...nuxtConfig, // nuxtConfig
-  // ...
-};
+	whitePath: [/^\/java\//, '/public', '/graphql'], // whiteList
+	...nuxtConfig // nuxtConfig
+	// ...
+}
 ```
 
 see [config/config.default.js](config/config.default.js) for more detail.
