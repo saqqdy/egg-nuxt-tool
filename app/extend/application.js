@@ -32,5 +32,5 @@ module.exports = {
             this[NUXTBUILD] = new Builder(this.nuxt)
         }
         return this[NUXTBUILD]
-    },
+    }
 }
