@@ -15,8 +15,8 @@
 [npm-url]: https://npmjs.org/package/egg-nuxt-tool
 [codacy-image]: https://app.codacy.com/project/badge/Grade/f70d4880e4ad4f40aa970eb9ee9d0696
 [codacy-url]: https://www.codacy.com/gh/saqqdy/egg-nuxt-tool/dashboard?utm_source=github.com&utm_medium=referral&utm_content=saqqdy/egg-nuxt-tool&utm_campaign=Badge_Grade
-[travis-image]: https://travis-ci.org/saqqdy/egg-nuxt-tool.svg?branch=master
-[travis-url]: https://travis-ci.org/saqqdy/egg-nuxt-tool
+[travis-image]: https://travis-ci.com/saqqdy/egg-nuxt-tool.svg?branch=master
+[travis-url]: https://travis-ci.com/saqqdy/egg-nuxt-tool
 [codecov-image]: https://img.shields.io/codecov/c/github/saqqdy/egg-nuxt-tool.svg?style=flat-square
 [codecov-url]: https://codecov.io/github/saqqdy/egg-nuxt-tool?branch=master
 [david-image]: https://img.shields.io/david/saqqdy/egg-nuxt-tool.svg?style=flat-square
