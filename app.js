@@ -1,5 +1,6 @@
 module.exports = app => {
     app.config.coreMiddleware.unshift('nuxtTool')
+    // onBeforeStart
     app.beforeStart(async () => {
         // try {
         //   await app.nuxt.ready()
