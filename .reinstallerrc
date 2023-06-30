@@ -1,0 +1,9 @@
+{
+	"packageTags": {
+		"nuxt": "2x",
+		"reinstaller": "latest"
+	},
+	"exclude": [],
+	"packageManager": "pnpm",
+	"registry": "https://registry.npmmirror.com"
+}

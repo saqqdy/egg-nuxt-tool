@@ -1,15 +1,15 @@
 module.exports = app => {
-    app.config.coreMiddleware.unshift('nuxtTool')
-    // onBeforeStart
-    app.beforeStart(async () => {
-        // try {
-        //   await app.nuxt.ready()
-        //   if (app.config.nuxt.dev) {
-        //     await app.nuxtBuild.build()
-        //   }
-        // } catch (error) {
-        //   console.log('[nuxt] Building error', error)
-        //   process.exit(1)
-        // }
-    })
+	app.config.coreMiddleware.unshift('nuxt')
+	// onBeforeStart
+	app.beforeStart(async () => {
+		// try {
+		//   await app.nuxt.ready()
+		//   if (app.config.nuxt.dev) {
+		//     await app.nuxtBuild.build()
+		//   }
+		// } catch (error) {
+		//   console.log('[nuxt] Building error', error)
+		//   process.exit(1)
+		// }
+	})
 }

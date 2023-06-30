@@ -1,8 +1,6 @@
-*.ts  linguist-language=TypeScript
-.eslintrc.js linguist-vendored
-.prettierrc.js linguist-vendored
-config.js linguist-vendored
-typedoc.js linguist-vendored
-*.config.js linguist-vendored
-lib/* linguist-vendored
-es/* linguist-vendored
+**/*.ts  linguist-language=TypeScript
+scripts/**/* linguist-language=TypeScript
+**/.eslintrc.js linguist-vendored
+**/.prettierrc.js linguist-vendored
+**/*.config.js linguist-vendored
+**/dist/**/* linguist-vendored

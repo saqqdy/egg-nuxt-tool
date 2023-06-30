@@ -1,8 +1,17 @@
-# 2021.02.08 v1.0.3 更新日志
+# Update Logs
 
-1. 增加 whitePath 参数
-2. 优化代码
+## 2021.02.08 v1.0.3
 
-# 2020.08.14 v1.0.0 更新日志
+1. change plugin name: `nuxtTool` => `nuxt`
+2. Some optimization work
+3. fix bugs
+4. upgrade all package
 
-1. 创建项目
+## 2021.02.08 v1.0.3
+
+1. add `whitePath` parameter
+2. Optimize the code
+
+## 2020.08.14 v1.0.0
+
+1. create project

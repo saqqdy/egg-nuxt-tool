@@ -1,4 +1,12 @@
-lib
+.git
+node_modules
+/run
 dist
+public
+pnpm-lock.yaml
+
 *.bak
 *_bak
+*.bak.js
+
+stats.html
