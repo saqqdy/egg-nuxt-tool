@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   js-cool:
-    specifier: ^4.7.0
-    version: 4.7.0
+    specifier: ^5.1.0
+    version: 5.1.0
   nuxt:
     specifier: ^2.17.0
     version: 2.17.0(consola@3.2.2)(vue@2.7.14)
@@ -51,7 +51,7 @@ devDependencies:
     version: 1.4.0
   reinstaller:
     specifier: ^3.0.2
-    version: 3.0.2(debug@4.3.4)(js-cool@4.7.0)
+    version: 3.0.2(debug@4.3.4)(js-cool@5.1.0)
   tsnd:
     specifier: ^1.1.0
     version: 1.1.0
@@ -4858,6 +4858,7 @@ packages:
 
   /bindings@1.5.0:
     resolution: {integrity: sha512-p2q/t/mhvuOj/UeLlV6566GD/guowlr0hHxClI0W9m7MWYkL1F0hLo+0Aexs9HSPCtR1SXQ0TD3MMKrXZajbiQ==}
+    requiresBuild: true
     dependencies:
       file-uri-to-path: 1.0.0
     dev: false
@@ -8069,6 +8070,7 @@ packages:
 
   /file-uri-to-path@1.0.0:
     resolution: {integrity: sha512-0Zt+s3L7Vf1biwWZ29aARiVYLx7iMGnEUl9x33fbB/j3jR81u/O2LbqK+Bm1CDSNDKVtJ/YjwY7TUd5SkeLQLw==}
+    requiresBuild: true
     dev: false
     optional: true
 
@@ -9431,8 +9433,8 @@ packages:
     resolution: {integrity: sha512-8wb9Yw966OSxApiCt0K3yNJL8pnNeIv+OEq2YMidz4FKP6nonSRoOXc80iXY4JaN2FC11B9qsNmDsm+ZOfMROA==}
     dev: true
 
-  /js-cool@4.7.0:
-    resolution: {integrity: sha512-8H3rUxI9xNCkSFGMsBCcmiMQtrSZsGG4hjNYAZUta/xKvjtHboPPDEGw4TxaLU3x7zxj2akvjlPFm5Ki+Om5EA==}
+  /js-cool@5.1.0:
+    resolution: {integrity: sha512-NWb3gobaGiXg1bKuGmfV2E0owfFOTabu8yP5PLscCmMTVpDeI6EO5eDqUmLUknEp0vg6CFt5p+Ab0cYFHQIkEw==}
     engines: {node: '>=12.20'}
     dependencies:
       load-source: 1.2.0
@@ -9440,6 +9442,7 @@ packages:
       mount-image: 1.2.0
       mount-script: 1.2.0
       mount-style: 1.2.0
+      tslib: 2.6.0
       use-downloads: 1.4.0
 
   /js-tokens@3.0.2:
@@ -10446,6 +10449,7 @@ packages:
 
   /nan@2.17.0:
     resolution: {integrity: sha512-2ZTgtl0nJsO0KQCjEpxcIr5D+Yv90plTitZt9JBfQvVJDS5seMl3FOvsh3+9CoYWXf/1l5OaZzzF6nDm4cagaQ==}
+    requiresBuild: true
     dev: false
     optional: true
 
@@ -12781,7 +12785,7 @@ packages:
       jsesc: 0.5.0
     dev: false
 
-  /reinstaller@3.0.2(debug@4.3.4)(js-cool@4.7.0):
+  /reinstaller@3.0.2(debug@4.3.4)(js-cool@5.1.0):
     resolution: {integrity: sha512-VLjzE9tQMghK53x1Ccx96AEdRRe+dKq5zsnSNFLf1d7QsLAaRV0yX3lU1djgIaPYNSjDOXBRXjt8Y/GFTrHt/A==}
     hasBin: true
     peerDependencies:
@@ -12795,7 +12799,7 @@ packages:
       cosmiconfig: 8.2.0
       debug: 4.3.4(supports-color@8.1.1)
       global-modules: 2.0.0
-      js-cool: 4.7.0
+      js-cool: 5.1.0
       monorepo-root: 2.5.1
       ora: 6.3.1
       what-pm: 2.5.1(core-js@3.31.0)
