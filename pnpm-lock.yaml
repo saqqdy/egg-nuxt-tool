@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   js-cool:
-    specifier: ^4.7.0
-    version: 4.7.0
+    specifier: ^5.3.0
+    version: 5.3.0
   nuxt:
     specifier: ^2.17.0
     version: 2.17.0(consola@3.2.2)(vue@2.7.14)
@@ -51,7 +51,7 @@ devDependencies:
     version: 1.4.0
   reinstaller:
     specifier: ^3.0.2
-    version: 3.0.2(debug@4.3.4)(js-cool@4.7.0)
+    version: 3.0.2(debug@4.3.4)(js-cool@5.3.0)
   tsnd:
     specifier: ^1.1.0
     version: 1.1.0
@@ -2262,6 +2262,10 @@ packages:
     dependencies:
       eslint-scope: 5.1.1
     dev: true
+
+  /@node-kit/extra.cp@3.1.1:
+    resolution: {integrity: sha512-YyOp/OPHRW/Uv0TyJWXoHI3O/s8pAgX4IIizYvQi4oJjPNt95RvuIbBZ4q2YcSYOtHpLn1eoTJ3q7+wBmV0U+A==}
+    hasBin: true
 
   /@node-kit/extra.fs@2.5.1:
     resolution: {integrity: sha512-cj0gMQ+yE4jNmCrtz1TEXYMX+zNOJEGxGy1YzG2IBek0ndKszIYRxyLbIz3URh1MSTMGT+f9Zxy3iARB8vVP9g==}
@@ -4858,6 +4862,7 @@ packages:
 
   /bindings@1.5.0:
     resolution: {integrity: sha512-p2q/t/mhvuOj/UeLlV6566GD/guowlr0hHxClI0W9m7MWYkL1F0hLo+0Aexs9HSPCtR1SXQ0TD3MMKrXZajbiQ==}
+    requiresBuild: true
     dependencies:
       file-uri-to-path: 1.0.0
     dev: false
@@ -8069,6 +8074,7 @@ packages:
 
   /file-uri-to-path@1.0.0:
     resolution: {integrity: sha512-0Zt+s3L7Vf1biwWZ29aARiVYLx7iMGnEUl9x33fbB/j3jR81u/O2LbqK+Bm1CDSNDKVtJ/YjwY7TUd5SkeLQLw==}
+    requiresBuild: true
     dev: false
     optional: true
 
@@ -9026,6 +9032,10 @@ packages:
       loose-envify: 1.4.0
     dev: true
 
+  /invert-kv@3.0.1:
+    resolution: {integrity: sha512-CYdFeFexxhv/Bcny+Q0BfOV+ltRlJcd4BBZBYFX/O0u4npJrgZtIcjokegtiSMAvlMTJ+Koq0GBCc//3bueQxw==}
+    engines: {node: '>=8'}
+
   /ip@1.1.8:
     resolution: {integrity: sha512-PuExPYUiu6qMBQb4l06ecm6T6ujzhmh+MeJcW9wa89PoAz5pvd4zPgN5WJV104mb6S2T1AwNIAaB70JNrLQWhg==}
 
@@ -9431,8 +9441,8 @@ packages:
     resolution: {integrity: sha512-8wb9Yw966OSxApiCt0K3yNJL8pnNeIv+OEq2YMidz4FKP6nonSRoOXc80iXY4JaN2FC11B9qsNmDsm+ZOfMROA==}
     dev: true
 
-  /js-cool@4.7.0:
-    resolution: {integrity: sha512-8H3rUxI9xNCkSFGMsBCcmiMQtrSZsGG4hjNYAZUta/xKvjtHboPPDEGw4TxaLU3x7zxj2akvjlPFm5Ki+Om5EA==}
+  /js-cool@5.3.0:
+    resolution: {integrity: sha512-OuVMIK6/73Z7YqE4y4vAZhMeSD1EpmV5eR/EvPo/wJHqkcW/qWEaFdOPRuymDe8Yd5j4TNOG2hYiTwBwoR/SqQ==}
     engines: {node: '>=12.20'}
     dependencies:
       load-source: 1.2.0
@@ -9440,6 +9450,8 @@ packages:
       mount-image: 1.2.0
       mount-script: 1.2.0
       mount-style: 1.2.0
+      os-lang: 3.1.1
+      tslib: 2.6.0
       use-downloads: 1.4.0
 
   /js-tokens@3.0.2:
@@ -9748,6 +9760,12 @@ packages:
       picocolors: 1.0.0
       shell-quote: 1.8.1
     dev: false
+
+  /lcid@4.0.1:
+    resolution: {integrity: sha512-qI4sQt7g19ZWtaodPKBUvym/pen9/lZzqyl2qeItTFPwJptXllVhe3KI+mV9xmBa4cnZoik8m1obToxqFbVIZQ==}
+    engines: {node: '>=14.16'}
+    dependencies:
+      invert-kv: 3.0.1
 
   /levn@0.3.0:
     resolution: {integrity: sha512-0OO4y2iOHix2W6ujICbKIaEQXvFQHue65vUG3pb5EUomzPI90z9hsA1VsO/dbIIpC53J8gxM9Q4Oho0jrCM/yA==}
@@ -10446,6 +10464,7 @@ packages:
 
   /nan@2.17.0:
     resolution: {integrity: sha512-2ZTgtl0nJsO0KQCjEpxcIr5D+Yv90plTitZt9JBfQvVJDS5seMl3FOvsh3+9CoYWXf/1l5OaZzzF6nDm4cagaQ==}
+    requiresBuild: true
     dev: false
     optional: true
 
@@ -10982,6 +11001,13 @@ packages:
     resolution: {integrity: sha512-B5JU3cabzk8c67mRRd3ECmROafjYMXbuzlwtqdM8IbS8ktlTix8aFGb2bAGKrSRIlnfKwovGUUr72JUPyOb6kQ==}
     engines: {node: '>=0.10.0'}
     dev: true
+
+  /os-lang@3.1.1:
+    resolution: {integrity: sha512-+1Ij2yQHWVbMwbXVrG7Y6rs3t/IZmOPO9m1vNNy/nX0DbuXm+ZVusLQLy8mf953pXVbAXO4KynuisuH0crHfCA==}
+    hasBin: true
+    dependencies:
+      '@node-kit/extra.cp': 3.1.1
+      lcid: 4.0.1
 
   /os-name@1.0.3:
     resolution: {integrity: sha512-f5estLO2KN8vgtTRaILIgEGBoBrMnZ3JQ7W9TMZCnOIGwHe8TRGSpcagnWDo+Dfhd/z08k9Xe75hvciJJ8Qaew==}
@@ -12781,7 +12807,7 @@ packages:
       jsesc: 0.5.0
     dev: false
 
-  /reinstaller@3.0.2(debug@4.3.4)(js-cool@4.7.0):
+  /reinstaller@3.0.2(debug@4.3.4)(js-cool@5.3.0):
     resolution: {integrity: sha512-VLjzE9tQMghK53x1Ccx96AEdRRe+dKq5zsnSNFLf1d7QsLAaRV0yX3lU1djgIaPYNSjDOXBRXjt8Y/GFTrHt/A==}
     hasBin: true
     peerDependencies:
@@ -12795,7 +12821,7 @@ packages:
       cosmiconfig: 8.2.0
       debug: 4.3.4(supports-color@8.1.1)
       global-modules: 2.0.0
-      js-cool: 4.7.0
+      js-cool: 5.3.0
       monorepo-root: 2.5.1
       ora: 6.3.1
       what-pm: 2.5.1(core-js@3.31.0)
