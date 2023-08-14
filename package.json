@@ -34,7 +34,7 @@
 		"nuxt": "^2.17.0"
 	},
 	"devDependencies": {
-		"@eslint-sets/eslint-config-basic": "^5.5.0",
+		"@eslint-sets/eslint-config-basic": "^5.8.0",
 		"autod": "^3.1.2",
 		"autod-egg": "^1.1.0",
 		"egg": "^3.17.3",
