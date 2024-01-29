@@ -1,5 +1,5 @@
 module.exports = app => {
-	app.config.coreMiddleware.unshift('nuxt')
+	app.config.coreMiddleware.unshift('nuxtTooL')
 	// onBeforeStart
 	app.beforeStart(async () => {
 		// try {

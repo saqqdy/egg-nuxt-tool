@@ -3,22 +3,22 @@ const { Nuxt, Builder } = require('nuxt')
 const NUXT = Symbol('Application#nuxt')
 const NUXT_BUILD = Symbol('Application#nuxtBuild')
 
-function loadNuxtConfig(config) {
-	let { nuxt } = config
-	try {
-		typeof nuxt === 'string' && (nuxt = require(nuxt))
-	} catch (e) {
-		console.warn('[egg-nuxt-tool] ' + nuxt + ' nuxt config file is not exists')
-		nuxt = {
-			// srcDir: path.join(config.baseDir, './client'),
-			// rootDir: config.baseDir
-		}
-		console.warn('[egg-nuxt] default nuxt:', JSON.stringify(nuxt))
-	}
-	// Create development build when calling `egg-bin dev`
-	// nuxt.dev = config.env === 'local'
-	return nuxt
-}
+// function loadNuxtConfig(config) {
+// 	let { nuxt } = config
+// 	try {
+// 		typeof nuxt === 'string' && (nuxt = require(nuxt))
+// 	} catch (e) {
+// 		console.warn('[egg-nuxt-tool] ' + nuxt + ' nuxt config file is not exists')
+// 		nuxt = {
+// 			// srcDir: path.join(config.baseDir, './client'),
+// 			// rootDir: config.baseDir
+// 		}
+// 		console.warn('[egg-nuxt] default nuxt:', JSON.stringify(nuxt))
+// 	}
+// 	// Create development build when calling `egg-bin dev`
+// 	// nuxt.dev = config.env === 'local'
+// 	return nuxt
+// }
 
 // function loadNuxtConfig(config) {
 // 	let options = config.nuxt
@@ -40,8 +40,8 @@ function loadNuxtConfig(config) {
 module.exports = {
 	get nuxt() {
 		if (!this[NUXT]) {
-			// this[NUXT] = new Nuxt(this.config.nuxt)
-			this[NUXT] = new Nuxt(loadNuxtConfig(this.config))
+			this[NUXT] = new Nuxt(this.config.nuxt)
+			// this[NUXT] = new Nuxt(loadNuxtConfig(this.config))
 		}
 		return this[NUXT]
 	},
